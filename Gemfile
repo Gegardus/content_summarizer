@@ -67,3 +67,6 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
 end
+
+gem 'ruby-openai'   # For OpenAI API integration
+gem 'dotenv-rails'  # For managing environment variables
