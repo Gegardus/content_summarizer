@@ -1,2 +1,10 @@
-<h1>Articles#index</h1>
-<p>Find me in app/views/articles/index.html.erb</p>
+<h1>Articles</h1>
+
+<div class="articles">
+  <% @articles.each do |article| %>
+    <h2><%= article.title %></h2>
+    <%= link_to "View article", article_path(article), class: "button" %>
+  <% end %>
+</div>
+<br/>
+<%= link_to "Create new article", new_article_path, class: "button" %>

@@ -1,2 +1,16 @@
-<h1>Articles#show</h1>
-<p>Find me in app/views/articles/show.html.erb</p>
+<h1>Article</h1>
+
+<div class="article">
+  <h2><%= @article.title %></h2>
+
+  <div class="content">
+    <%= simple_format(@article.content) %>
+  </div>
+  
+  <div class="summary-box">
+    <h3>AI Summary</h3>
+    <p><%= @article.summary %></p>
+  </div>
+</div>
+
+<%= link_to "Back to Articles", articles_path, class: "button" %>
